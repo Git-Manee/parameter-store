@@ -9,7 +9,10 @@ variable "parameters" {
     {name = "prod.rds.master_password", value = "expenseprod1234", type = "SecureString"},
     {name = "prod.rds.master_username", value = "expense", type = "String"},
     {name = "prod.expense.frontend.backend_url", value = "http://backend-prod.mkdevops.online/", type = "String"},
-    {name = "prod.rds.endpoint", value = "prod-mysql.cluster-cshnthuj0kj8.us-east-1.rds.amazonaws.com", type = "String"}
+    {name = "prod.rds.endpoint", value = "prod-mysql.cluster-cshnthuj0kj8.us-east-1.rds.amazonaws.com", type = "String"},
+
+    ##Dev env
+    {name = "dev.expense.frontend.backend_url", value = "http://backend-dev.mkdevops.online/", type = "String"}
   ]
 }
 
